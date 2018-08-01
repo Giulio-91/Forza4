@@ -1,0 +1,53 @@
+.Board-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  align-content: flex-end; }
+
+.Board {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  box-shadow: 0 0 0 2px #325d81; }
+
+.Slot-col {
+  display: flex;
+  flex-flow: column-reverse nowrap; }
+
+.Slot-row {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+  z-index: 10; }
+
+.Disc-slot {
+  width: 10vmin;
+  height: 10vmin;
+  overflow: hidden;
+  position: relative; }
+
+.Disc-slot:after {
+  position: absolute;
+  content: '';
+  width: 8vmin;
+  height: 8vmin;
+  box-shadow: 0 0 0 30px steelblue,  inset 0 0 0px 3px #325d81;
+  border-radius: 50%;
+  left: 1vmin;
+  top: 1vmin; }
+
+.Insert-disc {
+  margin-bottom: 5px; }
+
+.Insert-disc > .Disc {
+  top: 5vmin;
+  cursor: pointer;
+  opacity: 0; }
+
+.Insert-disc > .Disc:hover {
+  opacity: 1; }

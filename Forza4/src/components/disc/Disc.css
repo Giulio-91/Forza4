@@ -1,0 +1,54 @@
+.Disc {
+  width: 10vmin;
+  height: 10vmin;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  animation-duration: infinite;
+  top: 0;
+  transition: top 2s ease-in; }
+
+.Disc:after {
+  position: absolute;
+  content: '';
+  width: 8vmin;
+  height: 8vmin;
+  left: 1vmin;
+  top: 1vmin; }
+
+@keyframes fall60 {
+  from {
+    top: -56vmin; }
+  to {
+    top: 0; } }
+
+@keyframes fall50 {
+  from {
+    top: -46vmin; }
+  to {
+    top: 0; } }
+
+@keyframes fall40 {
+  from {
+    top: -36vmin; }
+  to {
+    top: 0; } }
+
+@keyframes fall30 {
+  from {
+    top: -26vmin; }
+  to {
+    top: 0; } }
+
+@keyframes fall20 {
+  from {
+    top: -16vmin; }
+  to {
+    top: 0; } }
+
+@keyframes fall10 {
+  from {
+    top: -6vmin; }
+  to {
+    top: 0; } }
